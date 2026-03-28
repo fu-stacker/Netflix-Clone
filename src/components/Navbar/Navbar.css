@@ -1,0 +1,39 @@
+.nav-container {
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  width: 100%;
+  /* border: 2px solid wheat; */
+}
+li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.left-list,
+.right-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 100px;
+}
+img {
+  height: 24px;
+  width: 24px;
+}
