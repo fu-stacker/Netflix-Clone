@@ -3,10 +3,10 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: transparent;
-
+  gap: 300px;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
@@ -19,21 +19,20 @@ li {
   cursor: pointer;
 }
 
-.lists {
+.left-list {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 40px;
 }
-.left-list,
 .right-list {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
-
-  gap: 100px;
 }
 img {
   height: 24px;
   width: 24px;
+}
+.netflix-logo {
+  color: red;
 }

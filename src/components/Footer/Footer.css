@@ -1,7 +1,15 @@
 .main-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 li {
   cursor: pointer;
+}
+
+.first-box {
+}
+.first-box-button {
+  display: flex;
+  /* flex-direction: column; */
 }
