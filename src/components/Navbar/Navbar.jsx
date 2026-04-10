@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <div className="nav-container">
       <div className="left-list">
-        <li>
-          <SiNetflix color="red" />
+        <li className="netflix-logo">
+          <img src={netflixlogo} alt="netflix-logo" />
         </li>
 
         <li>home</li>

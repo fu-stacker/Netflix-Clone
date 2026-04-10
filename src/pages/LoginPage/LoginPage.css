@@ -1,0 +1,95 @@
+.login-screen {
+  /* Use a high-quality movie grid image */
+
+  /* This ensures the image covers the entire screen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+
+  /* Adding a dark overlay so the login box stands out */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+  gap: 60%;
+}
+img {
+  width: 250px;
+  height: 100px;
+  cursor: alias;
+}
+button {
+  border: 1px solid red;
+  background-color: #e50914;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-form-mainbox {
+  /* display: flex; */
+  max-width: 30%;
+  align-items: center;
+  margin: 12px auto;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 60px;
+  border-radius: 8px;
+}
+.long-button {
+  padding: 12px 100px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+input {
+  border: none;
+  padding: 12px 100px;
+  margin-top: 16px;
+  background-color: rgba(40, 38, 38, 0.75);
+}
+input::placeholder {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+button:hover {
+  background-color: #b20710;
+}
+.remeber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.need-help {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  color: gray;
+}
+a,
+p,
+label {
+  font-weight: 400;
+  color: gray;
+}
+strong {
+  font-weight: 500;
+  font-size: large;
+  color: white;
+}
+.last-paragrapgh {
+  margin-bottom: 20px;
+}
