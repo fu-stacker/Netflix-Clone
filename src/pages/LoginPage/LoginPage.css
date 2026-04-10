@@ -48,6 +48,7 @@ button {
   padding: 60px;
   border-radius: 8px;
 }
+
 .long-button {
   padding: 12px 100px;
   margin-top: 30px;
@@ -58,10 +59,22 @@ input {
   padding: 12px 100px;
   margin-top: 16px;
   background-color: rgba(40, 38, 38, 0.75);
+  font-size: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 input::placeholder {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
+  color: #8c8c8c;
+}
+input:focus {
+  outline: none;
+  background-color: #454545;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.5);
 }
 button:hover {
   background-color: #b20710;

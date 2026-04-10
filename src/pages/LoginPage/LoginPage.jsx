@@ -5,7 +5,7 @@ import netflixlogo from "../../assets/netflix-logo.png";
 import { Login } from "@mui/icons-material";
 import LoginForm from "./LoginForm";
 
-function LoginPage() {
+function LoginPage({ isallow }) {
   const bannerStyle = {
     backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(20,20,20,1) 100%), url(${netflixbackground})`,
   };
@@ -25,7 +25,7 @@ function LoginPage() {
       </nav>
       {signin ? (
         <div className="login-form-mainbox">
-          <LoginForm />
+          <LoginForm finallogin={isallow} />
         </div>
       ) : (
         <p></p>
