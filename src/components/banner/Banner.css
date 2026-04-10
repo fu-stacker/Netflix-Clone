@@ -1,0 +1,21 @@
+.banner-main-box Navbar {
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.banner-conntent h1 {
+  font-size: 5.4rem;
+}
+.banner-conntent p {
+  font-size: 20px;
+  color: white;
+  max-width: 500px;
+}
+.banner_buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6rem;
+  align-items: center;
+  margin: 10px 30px;
+}

@@ -1,21 +1,27 @@
 .nav-container {
-  box-sizing: border-box;
-  position: sticky;
+  position: fixed; /* 1. Takes it out of the layout flow */
   top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: transparent;
-  gap: 300px;
-  transition: all 0.5s;
-  transition-timing-function: ease-in;
-  z-index: 1;
   width: 100%;
-  /* border: 2px solid wheat; */
+  height: 70px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  font-size: 16px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+  transition: background-color 0.5s ease;
 }
 li {
   list-style: none;
-  color: white;
+  /* color: white; */
   cursor: pointer;
 }
 
@@ -30,6 +36,6 @@ li {
   align-items: center;
 }
 img {
-  height: 40px;
-  width: 64px;
+  height: 30px;
+  width: 54px;
 }

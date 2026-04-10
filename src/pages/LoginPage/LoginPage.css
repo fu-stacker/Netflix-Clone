@@ -24,6 +24,7 @@ img {
   height: 100px;
   cursor: alias;
 }
+
 button {
   border: 1px solid red;
   background-color: #e50914;
@@ -54,7 +55,7 @@ button {
   margin-top: 30px;
   margin-bottom: 5px;
 }
-input {
+.long-button input {
   border: none;
   padding: 12px 100px;
   margin-top: 16px;
@@ -66,17 +67,17 @@ input {
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
-input::placeholder {
+.long-button input::placeholder {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: #8c8c8c;
 }
-input:focus {
+.long-button input:focus {
   outline: none;
   background-color: #454545;
   box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.5);
 }
-button:hover {
+.long-button button:hover {
   background-color: #b20710;
 }
 .remeber {
