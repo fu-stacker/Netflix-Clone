@@ -12,9 +12,7 @@ export default function App() {
   };
   return (
     <div className="container">
-      {/* {allowlogin ? */}
-      <Home />
-      {/* : <LoginPage isallow={swichpage} />} */}
+      {allowlogin ? <Home /> : <LoginPage isallow={swichpage} />}
     </div>
   );
 }

@@ -1,0 +1,33 @@
+/* Row.css */
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row__posters {
+  display: flex; /* Puts images in a row */
+  overflow-y: hidden; /* Stops vertical shaking */
+  overflow-x: scroll; /* Allows horizontal swiping */
+  padding: 1px;
+}
+
+/* Hide the ugly scrollbar but keep the scrolling functionality */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px; /* Standard row height */
+  margin-right: 10px;
+  transition: transform 450ms; /* Smooth zoom effect */
+}
+
+.row__poster:hover {
+  transform: scale(1.28); /* The zoom-in effect on hover */
+}
+
+.row__posterLarge {
+  max-height: 250px; /* Makes the 'Originals' row taller */
+}

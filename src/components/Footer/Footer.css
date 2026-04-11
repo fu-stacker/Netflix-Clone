@@ -1,15 +1,76 @@
-.main-container {
+.footer_outer_container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  background-color: #111; /* Matches the rest of the site */
+  color: grey;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-li {
+
+.footer_inner_container {
+  width: 100%;
+  max-width: 1000px; /* Standard Netflix content width */
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: white; /* Icons stand out slightly more */
+}
+
+.footer_icons > .MuiSvgIcon-root {
   cursor: pointer;
 }
 
-.first-box {
-}
-.first-box-button {
+.footer_data {
   display: flex;
-  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.footer_data ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_data li {
+  font-size: 13px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.footer_data li:hover {
+  text-decoration: underline;
+}
+
+/* Service Code Button */
+.service_code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.service_code:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.copy-wright {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive Logic */
+@media (max-width: 768px) {
+  .footer_data {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+  }
 }

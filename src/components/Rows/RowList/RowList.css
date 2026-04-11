@@ -1,0 +1,8 @@
+.rowList {
+  /* This ensures the list starts below the Banner and Navbar */
+  margin-top: -50px; /* Pulls the first row slightly over the banner fade */
+  position: relative;
+  z-index: 1;
+  background-color: #111;
+  padding-bottom: 40px;
+}

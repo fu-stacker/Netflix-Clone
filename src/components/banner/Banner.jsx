@@ -4,6 +4,7 @@ import request from "../../utils/request";
 import axios from "axios";
 import Navbar from "../Navbar/Navbar";
 import "./Banner.css";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 function Banner() {
   const [movie, setmovie] = useState({});
@@ -13,17 +14,17 @@ function Banner() {
       .then((s) => {
         const randomSelection =
           s.data.results[Math.floor(Math.random() * s.data.results.length)];
-
+        console.log(s);
         setmovie(randomSelection);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-  const truncate = (p, 150) =>
-  
-  { return p?.length > n ? p.substr(0, n - 1) + "..." + p; }
-  
+  function truncate(p, n) {
+    return p?.length > n ? p.substr(0, n - 1) + "..." : p;
+  }
+
   return (
     <div
       className="banner-main-box"
@@ -41,10 +42,12 @@ function Banner() {
       <Navbar />
       <div className="banner-conntent">
         <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
-        <p>{movie?.overview}</p>
+        <p>{truncate(movie?.overview, 150)}</p>
         <div className="banner_buttons">
-          <button className="banner_button">Play</button>
-          <button className="banner_button">My List</button>
+          <button className="banner_button1">
+            <PlayArrowIcon style={{ margin: "0" }} /> Play
+          </button>
+          <button className="banner_button2">My List</button>
         </div>
       </div>
     </div>

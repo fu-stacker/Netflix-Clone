@@ -22,7 +22,7 @@
 img {
   width: 250px;
   height: 100px;
-  cursor: alias;
+  /* cursor: alias; */
 }
 
 button {

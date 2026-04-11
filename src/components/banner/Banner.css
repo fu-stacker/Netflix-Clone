@@ -14,8 +14,48 @@
 }
 .banner_buttons {
   display: flex;
-  justify-content: flex-start;
-  gap: 6rem;
-  align-items: center;
-  margin: 10px 30px;
+  gap: 1rem; /* Creates space between buttons without using margins */
+  margin: 1rem;
+}
+
+/* Base style for both buttons */
+.banner_button1,
+.banner_button2 {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px; /* Apple/Netflix style rounded corners */
+  padding: 0.6rem 2rem;
+  display: flex;
+  align-items: center; /* Centers the Play Icon and Text vertically */
+  justify-content: center;
+  transition: all 0.2s ease; /* Smooth hover effect */
+  font-size: 1rem;
+}
+
+/* The Play Button (Light/Solid) */
+.banner_button1 {
+  background-color: white;
+  color: black;
+}
+
+.banner_button1:hover {
+  background-color: rgba(255, 255, 255, 0.75); /* Slight fade on hover */
+}
+
+/* The My List Button (Semi-Transparent) */
+.banner_button2 {
+  background-color: rgba(109, 109, 110, 0.7); /* Translucent grey */
+}
+
+.banner_button2:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+/* Adjust the icon spacing */
+.banner_button1 svg {
+  margin-right: 8px !important; /* Space between Play icon and text */
+  font-size: 1.8rem; /* Makes the Play arrow look bold */
 }
